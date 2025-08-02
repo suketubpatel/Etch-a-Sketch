@@ -9,7 +9,30 @@
   </head>
   <body>
     <h1>Etch-a-Sketch</h1>
-    <p class="info">Information goes here</p>
-    <div class="container"></div>
+    <p class="info">
+      Move cursor on the sketch pad and move to draw in rainbow color - default
+      grid size is 16!
+    </p>
+    <div class="main-container">
+      <div class="user-input-container">
+        <div class="div-user-input">
+          <label for="grid-size" class="font-size">Grid size:</label>
+          <input
+            name="grid-size"
+            type="number"
+            class="input-size font-size"
+            min="1"
+            max="100"
+            value="16"
+          />
+        </div>
+        <div class="div-btns">
+          <button class="btn btn-submit font-size">Submit</button>
+          <button class="btn btn-erase font-size">Erase</button>
+          <button class="btn btn-reset font-size">Rest</button>
+        </div>
+      </div>
+      <div class="container"></div>
+    </div>
   </body>
 </html>
